@@ -1,0 +1,51 @@
+#Q-1
+for(i=0; i<n ; i++){
+    sum = sum + i;
+}
+for(i=0; i<n ; i++){
+    sum = sum + i;
+}
+
+## Ans-1 --> 2 O(n) = O(n) 
+
+
+#Q-2
+for(i=0; i<n ; i++){
+    sum = sum + i;
+    for(i=0; i<n ; i++){
+    sum = sum + i;
+}
+}
+
+## Ans-2 --> O(n^2)
+
+Remember -
+O(3), O(5), O(7)... === O(1) 
+O(3n), O(5n), O(7n)... === O(n) 
+O(3n^2), O(5n^2), O(7n^2)... === O(n^2) 
+O(300n + 5000000) == O(n)
+2n^2 + 2n + 3 = O(n^2) + O(n) === O(n^2)
+
+
+
+#Q-3
+for(i=n/2; i<n ; i++){
+    for(j=2; j<n ; j= j*2){
+    sum = sum + i;
+}
+}
+
+## Ans-3 --> O(n/2 logn )==== O(nlogn)
+
+
+
+#Q-4
+for(i=0; i<n ; i++){
+    for(j=n; j<1 ; j--){
+    sum = sum + i;
+}
+}
+
+## Ans-4 --> O(n) O(n)==== O(n^2)
+
+
