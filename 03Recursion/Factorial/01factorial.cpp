@@ -1,3 +1,5 @@
+// Program to find factorial of  a given number
+
 #include <iostream>
 using namespace std;
 int myFact(int n);

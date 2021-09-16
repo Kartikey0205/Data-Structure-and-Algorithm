@@ -1,3 +1,4 @@
+// Program to find sum of Fibonacci series
 #include <iostream>
 using namespace std;
 int fib(int num)
