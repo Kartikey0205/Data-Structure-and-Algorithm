@@ -15,3 +15,5 @@
 -              Program to write  sum of Fibonnaci Series till last
 -              Program to write  sum of Fibonnaci Series till some specific position
 -              Program to write all fibonnacci term below 100
+
+>        Power Program - Program to calculate power of given number
