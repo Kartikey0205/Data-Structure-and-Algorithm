@@ -1,12 +1,12 @@
 # Data Structure And Algorithm
 
-- 01TimeComplexity - Questions Based on Time Complexity of few questions.
+- :file_folder: <b>01TimeComplexity</b> - Questions Based on Time Complexity of few questions.
 
-- 02Problem - Just a discussion over how to approach any question.
+- :file_folder: <b>02Problem</b> - Just a discussion over how to approach any question.
 
-- 03 Recursion - Recursion questions are discussed here
+- :file_folder: <b>03 Recursion</b> - Recursion questions are discussed here
 
->        Factorial - Program for factorial
+>        :file_folder: Factorial - Program for factorial
 
 >        Fibonacci -
 
