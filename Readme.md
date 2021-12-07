@@ -33,3 +33,11 @@
   - :file_folder: Tower Of Hanoi -
 
     [Tower Of Hanoi Problem](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/03Recursion/TowerOfHanoi/towerOfHanoi.cpp)
+
+- :file_folder: <b>04 Linked List</b> - Linked List questions are discussed here
+
+  - :file_folder: Linked List -
+
+  [Pushing Value at very First in Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValuePush.cpp)
+
+  [Insert Value at any Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValueInsertAt.cpp)
