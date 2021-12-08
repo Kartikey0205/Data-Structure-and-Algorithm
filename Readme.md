@@ -38,6 +38,8 @@
 
   - :file_folder: Linked List -
 
-  [Pushing Value at very First in Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValuePush.cpp)
+    [Pushing Value at very First in Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValuePush.cpp)
 
-  [Insert Value at any Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValueInsertAt.cpp)
+    [Insert Value at any Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValueInsertAt.cpp)
+
+    [Append Value](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValueAppend.cpp)
