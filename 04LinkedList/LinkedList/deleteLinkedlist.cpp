@@ -89,6 +89,19 @@ void deleteLinkedListCompletely(Node **head_ref)
     *head_ref = NULL;
     cout << "All nodes are deleted succesfully" << endl;
 }
+
+//  COUNTING ALL NODES IN A LINKED LIST
+int countAllNodes(Node *head)
+{
+    int count = 0;
+    Node *current = head;
+    while (current != NULL)
+    {
+        count++;
+        current = current->next;
+    }
+    return count;
+}
 int main()
 {
     // Always creating head to Null
@@ -98,6 +111,8 @@ int main()
     push(&head, 3);
     push(&head, 1);
     push(&head, 6);
+
+    cout << "Total nodes in Linked list will be " << countAllNodes(head) << endl;
     deleteElementInLinkedList(&head, 6);
     deleteLinkedListCompletely(&head);
     printLinkedList(head);
