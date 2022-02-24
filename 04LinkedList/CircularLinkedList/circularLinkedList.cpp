@@ -50,6 +50,24 @@ void printCircularList(Node *head)
         cout << " No value in Circular Linked List" << endl;
     }
 }
+
+//  count a node in cuircular Linked list
+int countNode(Node *head)
+{
+    if (head == NULL)
+    {
+        return 0;
+    }
+
+    Node *current = head;
+    int count = 0;
+    do
+    {
+        count++;
+        current = current->next;
+    } while (current != head);
+    return count;
+}
 int main()
 {
 
@@ -58,5 +76,6 @@ int main()
     push(20, &head);
     push(25, &head);
     printCircularList(head);
+    cout << "\nTotal number of node in Circular Linked List will be =  " << countNode(head);
     return 0;
 }
