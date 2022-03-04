@@ -94,6 +94,38 @@ void printDoublyLinkedList(Node *head_ref)
         head_ref = head_ref->next;
     }
 }
+
+void deleteNode(Node **head_ref, Node *key)
+{
+    cout << endl;
+    // Checking whether key or head is not NULL
+    if (head_ref == NULL || key == NULL)
+    {
+        cout << "Since either head_ref or key is NULL so we can't proceed further" << endl;
+        return;
+    }
+
+    // CASE 1 - If Head Node is to be deleted
+    if (*head_ref == key)
+    {
+        *head_ref = key->next;
+    }
+
+    // CASE 2 - If Middle Node is Node to be deleted
+    if (key->next != NULL)
+    {
+        key->next->prev = key->prev;
+    }
+
+    // CASE 3 - If Last Node is to be deleted
+    if (key->prev != NULL)
+    {
+        key->prev->next = key->next;
+    }
+
+    free(key);
+    return;
+}
 int main()
 {
     Node *head = NULL;
@@ -106,6 +138,12 @@ int main()
     pushElement(&head, 17);
     middleInsert(&head, 4555, 2);
     middleInsert(&head, 12345, 6);
+
+    printDoublyLinkedList(head);
+    deleteNode(&head, head->next->next);
+    printDoublyLinkedList(head);
+
+    deleteNode(&head, head->next->next);
 
     printDoublyLinkedList(head);
 
