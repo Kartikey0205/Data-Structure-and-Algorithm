@@ -22,7 +22,7 @@ int main()
     s.push(9);
     s.push(24);
     s.push(97);
-
+    cout << "\n Size of Stack is " << s.size() << endl;
     printStack(s);
     s.pop();
     printStack(s);
