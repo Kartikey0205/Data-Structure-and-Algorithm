@@ -21,7 +21,7 @@ Node *insert(Node *node, int data)
     // if very first node or last node
     if (node == NULL)
     {
-        return newNode(data);
+        node = newNode(data);
     }
 
     // rest inserting value in left and right
@@ -33,6 +33,7 @@ Node *insert(Node *node, int data)
     {
         node->right = insert(node->right, data);
     }
+    return node;
 }
 
 // inOrder_Successor
@@ -46,8 +47,7 @@ Node *inOrder_Successor(Node *node)
     return newVal;
 }
 //  Deletion ->
-Node *
-deleteNode(Node *root, int data)
+Node *deleteNode(Node *root, int data)
 {
     // Checking that root is not NUll
     if (root == NULL)
@@ -88,6 +88,16 @@ deleteNode(Node *root, int data)
     return root;
 }
 
+// inOrder
+void inOrder(Node *node)
+{
+    if (node != NULL)
+    {
+        inOrder(node->left);
+        cout << node->key << " ";
+        inOrder(node->right);
+    }
+}
 // preOrder
 void preOrder(Node *node)
 {
@@ -98,8 +108,26 @@ void preOrder(Node *node)
         preOrder(node->right);
     }
 }
+// postOrder
+void postOrder(Node *node)
+{
+    if (node != NULL)
+    {
+        postOrder(node->left);
+        postOrder(node->right);
+        cout << node->key << " ";
+    }
+}
 int main()
 {
-
+    Node *n = NULL;
+    n = insert(n, 60);
+    n = insert(n, 50);
+    n = insert(n, 20);
+    n = insert(n, 960);
+    n = insert(n, 4360);
+    n = insert(n, 600);
+    cout << "In Order Traversal of BST is " << endl;
+    inOrder(n);
     return 0;
 }
