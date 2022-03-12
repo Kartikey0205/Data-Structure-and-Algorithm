@@ -22,6 +22,7 @@ Node *insert(Node *node, int data)
     if (node == NULL)
     {
         node = newNode(data);
+        return node;
     }
 
     // rest inserting value in left and right
@@ -125,9 +126,14 @@ int main()
     n = insert(n, 50);
     n = insert(n, 20);
     n = insert(n, 960);
+    n = deleteNode(n, 50);
     n = insert(n, 4360);
     n = insert(n, 600);
     cout << "In Order Traversal of BST is " << endl;
     inOrder(n);
+    cout << "\n pre Order Traversal of BST is " << endl;
+    preOrder(n);
+    cout << "\n postOOrder Traversal of BST is " << endl;
+    postOrder(n);
     return 0;
 }
