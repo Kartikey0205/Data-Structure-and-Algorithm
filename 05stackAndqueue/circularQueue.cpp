@@ -35,27 +35,33 @@ struct circularQueue
 
 void circularQueue ::enQueue(int data)
 {
-    cout << "Adding data = " << data << " in a queue " << endl;
     // FULL Queue
     if (((front == 0) && (rear == size - 1)) || (rear == (front - 1) % (size - 1)))
     {
-        cout << "Queue is full" << endl;
+        cout << "Queue is full so can't add " << data << endl;
 
         return;
     }
+
     else if (front == -1) // very first value
     {
+        cout << "Adding data = " << data << " in a queue " << endl;
+
         front = 0;
         rear = 0;
         arr[rear] = data;
     }
     else if ((rear == size - 1) && (front != 0)) // moving back again to front
     {
+        cout << "Adding data = " << data << " in a queue " << endl;
+
         rear = 0;
         arr[rear] = data;
     }
     else // all other cases
     {
+        cout << "Adding data = " << data << " in a queue " << endl;
+
         rear++;
         arr[rear] = data;
     }
@@ -90,11 +96,31 @@ int circularQueue ::deQueue()
 
 void circularQueue::printCircularQueue()
 {
-    cout << "\nCircular Queue is" << endl;
-    for (int i = 0; i < size; i++)
+    if (front == -1)
     {
-        cout << arr[i] << " ";
+        cout << "Queue is empty";
+        return;
     }
+
+    cout << "\nCircular queue is" << endl;
+
+    // When front is on array's left side and rear is onto the right
+    if (rear >= front)
+    {
+
+        for (int i = front; i <= rear; i++)
+            cout << arr[i] << " ";
+    }
+    else
+    {
+        // Else case based on placement of rear and front pointers
+        for (int i = front; i < size; i++)
+            cout << arr[i] << " ";
+
+        for (int i = 0; i <= rear; i++)
+            cout << arr[i] << " ";
+    }
+
     cout << endl;
 }
 int main()
