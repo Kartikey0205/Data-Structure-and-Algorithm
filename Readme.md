@@ -43,3 +43,17 @@
     [Insert Value at any Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValueInsertAt.cpp)
 
     [Append Value](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/addValueAppend.cpp)
+
+    [Delete Value](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/deleteLinkedlist.cpp)
+
+    [Linked list to Circular List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/linkedtoCircular.cpp)
+
+    [Reverse Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/LinkedList/reverseLinkedList.cpp)
+
+  - :file_folder: Doubly Linked List -
+
+    [Doubly Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/DoublyLinkedList/doublyLinkedList.cpp)
+
+  - :file_folder: Circular Linked List -
+
+    [Circular Linked List](https://github.com/Kartikey0205/Data-Structure-and-Algorithm/blob/dsa/04LinkedList/CircularLinkedList/circularLinkedList.cpp)
